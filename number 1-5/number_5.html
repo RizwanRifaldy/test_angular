@@ -1,0 +1,41 @@
+<script>
+    const arr1 = [
+        { min_score: 1, status: "fresher" },
+        { min_score: 5, status: "junior" },
+        { min_score: 8, status: "senior" },
+    ];
+
+    const arr2 = [
+        { name: "Susanti", id: "1", score: 4, status_test: "" },
+        { name: "Mei", id: "2", score: 7, status_test: "" },
+        { name: "Ros", id: "3", score: 9, status_test: "" },
+        { name: "Mail", id: "4", score: 2, status_test: "" },
+    ];
+    
+    function result(arr1,arr2){
+        var total = 0;
+        var final_result = [];
+
+        for ( x = 0; x < arr2.length; x++) { 
+            var result = [];
+            result.push(arr2[x].name);
+            result.push(arr2[x].id);
+            result.push(arr2[x].score);
+            if(arr2[x].score > arr1[2].min_score){
+                result.push(arr1[2].status);
+            }else if(arr2[x].score > arr1[1].min_score){
+                result.push(arr1[1].status);
+            }else if(arr2[x].score > arr1[0].min_score){
+                result.push(arr1[0].status);
+            }
+            final_result.push(result);
+        }
+
+        return final_result;
+    }
+    console.log(result(arr1,arr2));
+</script>
+
+<!-- 
+    Result di file task tidak sesuai untuk nomor 5 karena pengecekan minimal scorenya tidak sesuai
+ -->

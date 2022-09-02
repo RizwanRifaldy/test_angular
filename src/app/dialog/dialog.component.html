@@ -1,0 +1,78 @@
+<h1 mat-dialog-title><mat-icon>library_add</mat-icon> Add company staff for CASTORAMA fance SAS</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="legacy">
+        <mat-label>Mail</mat-label>
+        <input matInput placeholder="Enter Mail">
+        <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    <button mat-stroked-button class="button-position">Check Email Availability</button><br>
+    Civilty*
+    
+    <mat-radio-group aria-label="Select an option" class="all-radio-position">
+        <mat-radio-button value="1" class="radio-position">Mr.</mat-radio-button>
+        <mat-radio-button value="2" class="radio-position">Ms.</mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field appearance="legacy" class="position-input">
+        <mat-label>Firstname</mat-label>
+        <input matInput placeholder="Enter Firstname">
+        <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    
+    <mat-form-field appearance="legacy" class="position-input">
+        <mat-label>Lastname</mat-label>
+        <input matInput placeholder="Enter Lastname">
+        <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    
+    <mat-form-field appearance="legacy" class="position-input">
+        <mat-label>Position</mat-label>
+        <input matInput placeholder="Enter Position">
+        <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field> <br>
+    
+    <mat-form-field appearance="legacy">
+        <mat-label>Office Phone</mat-label>
+        <input matInput placeholder="Enter Office Phone">
+        <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    
+    <mat-form-field appearance="legacy" class="position-input">
+        <mat-label>Direct Line</mat-label>
+        <input matInput placeholder="Enter Direct Line">
+        <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    
+    <mat-form-field appearance="legacy" class="position-input">
+        <mat-label>Mobile Phone</mat-label>
+        <input matInput placeholder="Enter Mobile Phone">
+        <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Select Entity</mat-label>
+        <select matNativeControl name="car">
+          <option value="">Company</option>
+        </select>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill" class="position-input">
+        <mat-label>Select Company</mat-label>
+        <select matNativeControl name="car">
+          <option value="">Choose</option>
+        </select>
+    </mat-form-field>
+    
+    
+    <mat-form-field appearance="fill" class="position-input">
+        <select matNativeControl name="car">
+          <option value="">Select User Type </option>
+        </select>
+    </mat-form-field>
+    <mat-icon class="position-input">add_circle_outline</mat-icon>
+    <br>
+    <div  class="center-position">
+        <button mat-flat-button color="warn">Cancel</button>
+        <button mat-flat-button disabled>Submit</button>
+    </div>
+</div>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="content-gradient">
+        <div class="title-content">
+            <p>Simple Pricing!</p><br>
+            The most advanced customer support tools with simple <br> and affordable pricing. And you can always try for 30 days <br> free!
+        </div>
+        <div class="card-list">
+            <ul>
+                <li id="price1_popup">
+                    <div class="card-title">
+                        STANDAR
+                    </div>
+                    <div class="card-price">
+                        <sup>$</sup> <b>8</b> <sub>/ month</sub>
+                    </div>                    
+                    <div class="card-detail">
+                        <ul>
+                            <li><b>20</b> Project</li>
+                            <li><b>20</b> Pages</li>
+                            <li><b>200</b> Mb Disk Space</li>
+                        </ul>
+                        <button onclick="cekAlert()">BUY NOW</button>
+                    </div>
+                </li>
+                
+                <li id="price2_popup">
+                    <div class="card-title">
+                        ADVANCED
+                    </div>
+                    <div class="card-price">
+                        <sup>$</sup> <b>12</b> <sub>/ month</sub>
+                    </div>                    
+                    <div class="card-detail">
+                        <ul>
+                            <li><b>40</b> Project</li>
+                            <li><b>40</b> Pages</li>
+                            <li><b>500</b> Mb Disk Space</li>
+                        </ul>
+                        <button onclick="cekAlert()">BUY NOW</button>
+                    </div>
+                </li>
+                
+                <li id="price3_popup">
+                    <div class="card-title">
+                        BASIC
+                    </div>
+                    <div class="card-price">
+                        <sup>$</sup> <b>4</b> <sub>/ month</sub>
+                    </div>                    
+                    <div class="card-detail">
+                        <ul>
+                            <li><b>10</b> Project</li>
+                            <li><b>10</b> Pages</li>
+                            <li><b>100</b> Mb Disk Space</li>
+                        </ul>
+                        <button onclick="cekAlert()">BUY NOW</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="question-title">
+            Frequently Asked Question
+        </div>
+        <div class="question-list">
+            <ul>
+                <li>
+                    <b>How does free trial work?</b><br/><br/>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nobis aspernatur molestiae quae dolor similique vero rem placeat necessitatibus aliquid, magnam asperiores assumenda, culpa, eveniet voluptatum. Totam ab eius deleniti?
+                </li>
+                <li>
+                    <b>Can I cancel any time?</b><br/><br/>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam officiis dolores enim labore magnam, dolor aut cum ipsum natus et distinctio doloremque, aliquid tempore ullam quod suscipit modi. Cupiditate, ex!
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="price1" class="modal">
+        <div class="modal-content">        
+            <span class="close1">&times;</span>
+            <div class="card-list">
+                <ul>
+                    <li>
+                        <div class="card-title">
+                            STANDAR
+                        </div>
+                        <div class="card-price">
+                            <sup>$</sup> <b>8</b> <sub>/ month</sub>
+                        </div>                    
+                        <div class="card-detail">
+                            <ul>
+                                <li><b>20</b> Project</li>
+                                <li><b>20</b> Pages</li>
+                                <li><b>200</b> Mb Disk Space</li>
+                            </ul>
+                            <button onclick="cekAlert()">BUY NOW</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="price2" class="modal">
+        <div class="modal-content">        
+            <span class="close2">&times;</span>
+            <div class="card-list">
+                <ul>
+                    <li>
+                        <div class="card-title">
+                            ADVANCED
+                        </div>
+                        <div class="card-price">
+                            <sup>$</sup> <b>12</b> <sub>/ month</sub>
+                        </div>                    
+                        <div class="card-detail">
+                            <ul>
+                                <li><b>40</b> Project</li>
+                                <li><b>40</b> Pages</li>
+                                <li><b>500</b> Mb Disk Space</li>
+                            </ul>
+                            <button onclick="cekAlert()">BUY NOW</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="price3" class="modal">
+        <div class="modal-content">        
+            <span class="close3">&times;</span>
+            <div class="card-list">
+                <ul>
+                    <li>
+                        <div class="card-title">
+                            BASIC
+                        </div>
+                        <div class="card-price">
+                            <sup>$</sup> <b>4</b> <sub>/ month</sub>
+                        </div>                    
+                        <div class="card-detail">
+                            <ul>
+                                <li><b>10</b> Project</li>
+                                <li><b>10</b> Pages</li>
+                                <li><b>100</b> Mb Disk Space</li>
+                            </ul>
+                            <button onclick="cekAlert()">BUY NOW</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function cekAlert() {
+      alert("Success");
+    }
+
+    var modal1 = document.getElementById("price1");
+    var popup1 = document.getElementById("price1_popup");
+    var close1 = document.getElementsByClassName("close1")[0];
+    popup1.onclick = function() {
+        modal1.style.display = "block";
+    }
+    
+    close1.onclick = function() {
+        modal1.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+    }
+
+    
+    var modal2 = document.getElementById("price2");
+    var popup2 = document.getElementById("price2_popup");
+    var close2 = document.getElementsByClassName("close2")[0];
+    popup2.onclick = function() {
+        modal2.style.display = "block";
+    }
+    
+    close2.onclick = function() {
+        modal2.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+    }
+    
+    
+    var modal3 = document.getElementById("price3");
+    var popup3 = document.getElementById("price3_popup");
+    var close3 = document.getElementsByClassName("close3")[0];
+    popup3.onclick = function() {
+        modal3.style.display = "block";
+    }
+    
+    close3.onclick = function() {
+        modal3.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+mat-form-field{
+    width: 20%;
+}
+mat-button{
+    margin-left: 20px !important;;
+}
+.button-position{
+    margin-left: 30px;
+}
+.radio-position{
+    margin-left: 20px;
+}
+:host ::ng-deep .mat-radio-container{
+    height: 15px;
+    width: 15px;
+}
+:host ::ng-deep .mat-radio-outer-circle{
+    height: 15px;
+    width: 15px;
+}
+:host ::ng-deep .mat-radio-inner-circle{
+    height: 15px;
+    width: 15px;
+}
+:host ::ng-deep .mat-radio-button .mat-radio-ripple{
+    height: 20px; 
+    width: 20px;
+    border-radius: 50%;
+    left: calc(50% - 10px); 
+    top: calc(50% - 10px); 
+}
+.position-input{
+    margin-left: 30px;
+}
+.all-radio-position{
+    margin-right: 20px;
+}
+.center-position{
+    width: 100%;
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}

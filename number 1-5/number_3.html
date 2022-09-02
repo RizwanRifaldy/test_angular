@@ -1,0 +1,12 @@
+<script>
+    const number = [8, 7, 7, 9, 5, 4, 2, 9];
+    
+    function result(number){
+        var total = 0;
+        for ( x = 0; x < number.length; x++) {
+            total += number[x]
+        }
+        return Math.ceil(total/number.length);
+    }
+    console.log(result(number));
+</script>
