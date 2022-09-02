@@ -1,5 +1,7 @@
 # Test untuk HTML & JS ada di folder nomor 1 -5
 
+Untuk test nomor 3 terlewat, jadi yang dikerjakan 1,2,4,5. nomor 1 itu yang HTML. maaf atas kekeliruannya
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
 ## Development server
